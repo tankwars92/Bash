@@ -2,7 +2,7 @@
 session_start();
 require_once 'config.php';
 
-$admin_password = 'admin123';
+$admin_password = 'admin123'; // Обязательно измените!
 $is_logged_in = isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'];
 
 if (isset($_POST['login'])) {
@@ -38,6 +38,8 @@ if (!$is_logged_in) {
     <html>
     <head>
         <title>Админ-панель</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body link="#0000FF" vlink="#0000FF" alink="#0000FF">
@@ -89,6 +91,8 @@ $pending_quotes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <html>
 <head>
     <title>Админ-панель</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body link="#0000FF" vlink="#0000FF" alink="#0000FF">

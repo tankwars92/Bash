@@ -27,6 +27,8 @@ if ($show_single_quote) {
 <html><head>
 
 	<title>bash.org.ru - Цитатник Рунета</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="STYLESHEET" type="text/css" href="files/quote.css">
 	<link rel="alternate" title="Bash.org.ru RSS" href="rss/" type="application/rss+xml">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

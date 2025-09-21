@@ -44,6 +44,8 @@ if ($total_pages > 6) {
 <html><head>
 
 	<title>bash.org.ru - Цитатник Рунета</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="STYLESHEET" type="text/css" href="files/main.css">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
