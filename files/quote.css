@@ -1,0 +1,26 @@
+p.vbig {
+	font-family : "Times New Roman", sans-serif;
+	font-size : 26pt;
+}
+
+a {
+	text-decoration : none;
+}
+
+td.dat {
+	font-family: 'Monaco', 'Courier New', 'Lucida Console', fixed; 
+	font-size: smaller;
+	border-style : dotted;
+	border-width : 1px;
+	border-color : black;
+	padding : 5px;
+	background: #fafafc;
+}
+
+span.small{
+	font-size : xx-small;
+}
+
+textarea {
+	width: 100%
+}

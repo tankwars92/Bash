@@ -1,0 +1,23 @@
+p.vbig {
+	font-family : "Times New Roman", sans-serif;
+	font-size : 26pt;
+}
+
+a {
+	text-decoration : none;
+}
+
+td.dat {
+	border-style : dotted;
+	border-width : 1px;
+	border-color : black;
+	padding : 5px;
+}
+
+span.small{
+	font-size : xx-small;
+}
+
+textarea {
+	width: 100%
+}
