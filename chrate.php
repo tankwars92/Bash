@@ -8,6 +8,12 @@ $return_params = isset($_GET['params']) ? $_GET['params'] : '';
 
 if ($quote_id > 0 && in_array($action, ['up', 'down'])) {
     $ip_address = $_SERVER['REMOTE_ADDR'];
+
+    if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+        $ip_address = $_SERVER['HTTP_CLIENT_IP'];
+    } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+        $ip_address = explode(',', $_SERVER['HTTP_X_FORWARDED_FOR'])[0];
+    }
     
     try {
         $stmt = $pdo->prepare("SELECT id FROM votes WHERE quote_id = ? AND ip_address = ?");
